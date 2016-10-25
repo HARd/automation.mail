@@ -9,12 +9,19 @@ import com.org.mail.Util.LaunchBrowser;
 public class BaseTest {
 	
 	@Test
-	public void CheckLogin(){
+	public void checkLogin(){
 		
 		WebDriver driver = LaunchBrowser.starBrowser();
 		
-		PageFactory.initElements(driver, LoginPage.class);
+		LoginPage login = PageFactory.initElements(driver, LoginPage.class);
 		
+		login.login("ecotest2@i.ua", "eleks2");
+		
+		driver.close();
 	}
 
+	@Test
+	public void checkMail(){
+		
+	}
 }

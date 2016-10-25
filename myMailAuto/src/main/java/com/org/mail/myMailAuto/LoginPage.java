@@ -1,5 +1,7 @@
 package com.org.mail.myMailAuto;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -24,7 +26,7 @@ public class LoginPage {
 	}
 	
 	
-	//Locators
+	//Login data
 	@FindBy(how=How.NAME, using="login")
 		@CacheLookup
 		WebElement email;
@@ -38,17 +40,22 @@ public class LoginPage {
 		WebElement submit; 
 	
 	
+	//verification data
+	@FindBy(how=How.XPATH, using="html/body/div[2]/div[3]/ul[1]/li[2]/a") WebElement myName;
+	
 	//Methods
 	public void login(String mail, String pass){
 		
 		email.sendKeys(mail);
 		password.sendKeys(pass);
 		submit.click();
-	}
-	
-	boolean loginSuccesfull(){
-		return false;
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
 		
 	}
+	
+	
+	
+	
 
 }
