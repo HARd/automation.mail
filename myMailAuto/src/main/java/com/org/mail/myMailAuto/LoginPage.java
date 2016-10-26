@@ -51,10 +51,9 @@ public class LoginPage {
 		submit.click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-		
-	}
+		}
 	
-	
+	public boolean checkLogin = myName != null;
 	
 	
 
