@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.org.mail.Util.LaunchBrowser;
 
 abstract class BaseTest {
-	
+
 	WebDriver driver = LaunchBrowser.starBrowser();
 	LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 	MainPage mainPage = PageFactory.initElements(driver, MainPage.class);

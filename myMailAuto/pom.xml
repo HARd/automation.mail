@@ -15,12 +15,13 @@
 	</properties>
 
 	<dependencies>
+		<!--Selenium dependency -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>2.53.1</version>
 		</dependency>
-
+		<!--TestNg dependency -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>

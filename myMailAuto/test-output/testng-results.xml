@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3475" started-at="2016-10-26T08:50:36Z" finished-at="2016-10-26T08:50:39Z">
+  <suite name="Default suite" duration-ms="7949" started-at="2016-10-26T12:21:30Z" finished-at="2016-10-26T12:21:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3475" started-at="2016-10-26T08:50:36Z" finished-at="2016-10-26T08:50:39Z">
+    <test name="Default test" duration-ms="7949" started-at="2016-10-26T12:21:30Z" finished-at="2016-10-26T12:21:38Z">
       <class name="com.org.mail.myMailAuto.ExecutingTest">
-        <test-method status="PASS" signature="checkLogin()[pri:0, instance:com.org.mail.myMailAuto.ExecutingTest@407a7f2a]" name="checkLogin" duration-ms="3462" started-at="2016-10-26T11:50:36Z" finished-at="2016-10-26T11:50:39Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.org.mail.myMailAuto.ExecutingTest@495ee280]" name="openBrowser" is-config="true" duration-ms="3281" started-at="2016-10-26T15:21:30Z" finished-at="2016-10-26T15:21:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkLogin -->
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testA()[pri:0, instance:com.org.mail.myMailAuto.ExecutingTest@495ee280]" name="testA" duration-ms="926" started-at="2016-10-26T15:21:34Z" finished-at="2016-10-26T15:21:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.org.mail.myMailAuto.ExecutingTest@495ee280]" name="openBrowser" is-config="true" duration-ms="2234" started-at="2016-10-26T15:21:35Z" finished-at="2016-10-26T15:21:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testB()[pri:0, instance:com.org.mail.myMailAuto.ExecutingTest@495ee280]" name="testB" duration-ms="784" started-at="2016-10-26T15:21:37Z" finished-at="2016-10-26T15:21:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.org.mail.myMailAuto.ExecutingTest@495ee280]" name="quit" is-config="true" duration-ms="707" started-at="2016-10-26T15:21:38Z" finished-at="2016-10-26T15:21:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
       </class> <!-- com.org.mail.myMailAuto.ExecutingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
