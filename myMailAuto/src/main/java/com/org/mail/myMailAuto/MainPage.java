@@ -1,6 +1,5 @@
 package com.org.mail.myMailAuto;
 
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,11 +31,5 @@ public class MainPage {
 	WebElement mailBoxButton;
 
 	// Check is logged in correctly
-	public boolean isAvailable() {
-		try {
-			return myName != null;
-		} catch (NoSuchElementException e) {
-			return false;
-		}
-	}
+	
 }

@@ -15,7 +15,7 @@ public class ExecutingTest extends BaseTest {
 		System.out.println("<----Open browser and login---->");
 	}
 
-	/*
+	
 	@Test (description="Upload the profile picture")
 	public void testA() {
 		mainPage.myName.click();
@@ -25,9 +25,9 @@ public class ExecutingTest extends BaseTest {
 		
 		System.out.println("----Uploaded a picture----");
 		
-	}*/
+	}
 
-	@Test
+	@Test (description="Send a email")
 	public void testB(){
 		mainPage.mailBoxButton.click();
 		mailBox.sendMessage();
@@ -35,7 +35,21 @@ public class ExecutingTest extends BaseTest {
 		passportPage.logoutOfAccout();
 		System.out.println("----Sent a email----");
 	}
-
+	
+	@Test
+	public void testC(){
+		mainPage.mailBoxButton.click();
+		mailBox.deleteMail();
+		passportPage.logoutOfAccout();
+	}
+	
+	@Test
+	public void testD(){
+		mainPage.exit.click();
+	}
+	
+	
+	
 	@AfterClass
 	public void quit() {
 		driver.quit();
