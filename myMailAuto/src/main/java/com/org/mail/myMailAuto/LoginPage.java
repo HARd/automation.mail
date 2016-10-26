@@ -15,13 +15,15 @@ public class LoginPage {
 	 */
 
 	// constructor
+///////////////////////////////////	
 	WebDriver driver;
 
 	public LoginPage(WebDriver ldriver) {
 
 		this.driver = ldriver;
 	}
-
+///////////////////////////////////
+	
 	// Login data
 	@FindBy(how = How.NAME, using = "login")
 	WebElement email;

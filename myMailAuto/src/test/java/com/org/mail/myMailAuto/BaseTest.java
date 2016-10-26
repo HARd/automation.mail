@@ -10,5 +10,6 @@ abstract class BaseTest {
 	WebDriver driver = LaunchBrowser.starBrowser();
 	LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 	MainPage mainPage = PageFactory.initElements(driver, MainPage.class);
+	PassportPage passportPage = PageFactory.initElements(driver, PassportPage.class);
 	MailBox mailBox = PageFactory.initElements(driver, MailBox.class);
 }
