@@ -15,9 +15,14 @@ public class ExecutingTest extends BaseTest {
 		System.out.println("<----Open browser and login---->");
 	}
 
+	@Test
+	public void testA(){
+		mainPage.exit.click();
+	}
+	
 	
 	@Test (description="Upload the profile picture")
-	public void testA() {
+	public void testB() {
 		mainPage.myName.click();
 		passportPage.avatar.click();
 		passportPage.uploadPicture();
@@ -28,7 +33,7 @@ public class ExecutingTest extends BaseTest {
 	}
 
 	@Test (description="Send a email")
-	public void testB(){
+	public void testC(){
 		mainPage.mailBoxButton.click();
 		mailBox.sendMessage();
 		Assert.assertTrue(mailBox.messageSent(), "Everything worked");
@@ -36,20 +41,25 @@ public class ExecutingTest extends BaseTest {
 		System.out.println("----Sent a email----");
 	}
 	
-	@Test
-	public void testC(){
+	@Test(description="delete the mails")
+	public void testD(){
 		mainPage.mailBoxButton.click();
 		mailBox.deleteMail();
 		passportPage.logoutOfAccout();
 	}
 	
-	@Test
-	public void testD(){
-		mainPage.exit.click();
+	@Test(description="massive test case with all the features")
+	public void testE(){
+		mainPage.myName.click();
+		passportPage.avatar.click();
+		passportPage.uploadPicture();
+		passportPage.mailButton.click();
+		mailBox.sendMessage();
+		Assert.assertTrue(mailBox.messageSent(), "Everything worked");
+		mailBox.mailTab.click();
+		mailBox.deleteMail();
+		passportPage.logoutOfAccout();
 	}
-	
-	
-	
 	@AfterClass
 	public void quit() {
 		driver.quit();

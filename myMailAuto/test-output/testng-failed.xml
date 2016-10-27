@@ -7,7 +7,7 @@
         <methods>
           <include name="openBrowser"/>
           <include name="quit"/>
-          <include name="testA"/>
+          <include name="testD"/>
         </methods>
       </class> <!-- com.org.mail.myMailAuto.ExecutingTest -->
     </classes>

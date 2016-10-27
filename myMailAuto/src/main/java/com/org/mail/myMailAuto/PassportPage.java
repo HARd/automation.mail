@@ -20,7 +20,7 @@ public class PassportPage {
 	///////////////////////////////////
 	// Poshta
 	@FindBy(how = How.XPATH, using = ".//*[@id='newMail']/a")
-	WebElement mailBoxTab;
+	WebElement mailButton;
 
 	// menu button
 	@FindBy(how = How.XPATH, using = ".//*[@id='header_overall']/div[1]/ul[3]/li[4]/span")
